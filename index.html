@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>冲仔批发零售</title>
+	<link rel="stylesheet" href="css/Style.css" type="text/css">
 	<link rel="shortcut icon" type="image-x-icon" href="img/title.jpg" />
-	<title></title>
-	<link rel="stylesheet" href="css/Style.css" />
+	<script src="js/jquery-1.js"></script>
 </head>
+
+<!--[if IE 6]>
+ <script src="js/DD_belatedPNG_0.0.8a.js"></script>
+ <script type="text/javascript">
+	DD_belatedPNG.fix('*');
+ </script>
+<![endif]-->
 <body>
 <div id="header">
 	<div class="w980_cf">
 		<a href="javascript:;" id="logo">
-			<img src="img/logo.png" />
+			<img src="img/logo.png" alt="logo图片">
 		</a>
 		<div class="header-right">
 			<div class="h-nav">
-				<a href="javascript:;">在线留言</a>
-				<a href="javascript:;">收藏本站</a>
+				<a href="javascript:;" "=">在线留言</a>
+				<a href="javascript:void(0)" onclick="AddFavorite(' 东莞市厚街联宏机械厂','javascript:;')" rel="nofollow">收藏本站</a>
 				<a href="javascript:;">中文版</a>
 				<a href="javascript:;" style="border-right:none;">英文版</a>
 			</div>
@@ -44,28 +50,54 @@
 	<div class="box">
 		<ul class="list">
 			<li>
-				<a href="javascript:;">
-					<img src="img/banner_1.jpg"/>
-				</a>
+				<a href="javascript:;"><img src="img/banner_1.jpg" /></a>
 			</li>
 			<li>
-				<a href="javascript:;">
-					<img src="img/banner_2.jpg" />
-				</a>
+				<a href="javascript:;"><img src="img/banner_2.jpg" /></a>
 			</li>
-			   <li>
-				<a href="javascript:;">
-					<img src="img/banner_3.jpg" />
-				</a>
+			<li>
+				<a href="javascript:;"><img src="img/banner_3.jpg" /></a>
 			</li>
 		</ul>
 	</div>
+	<!-- 内部自动创建的切换按钮元素 开始 -->
 	<ul class="btn">
-		<li class="b_1"></li>
-		<li class="b_2 selected"></li>
-		<li class="b_3"></li>
+		<li class="b_1">
+		</li>
+		<li class="b_2">
+		</li>
+		<li class="b_3 selected">
+		</li>
 	</ul>
+	<!-- 内部自动创建的切换按钮元素 结束 -->
 </div>
+<script type="text/javascript">
+	function SubmitSearch() {
+		if ($("#textfield").val() == "") {
+			alert("请输入关键词");
+			return;
+		}
+		else {
+			window.open("/offerlist.html?q=" + encodeURI(document.getElementById("textfield").value));
+		}
+	}
+</script>
+<script type="text/javascript">
+	function AddFavorite(title, url) {
+		try {
+			window.external.addFavorite(url, title);
+		}
+		catch (e) {
+			try {
+				window.sidebar.addPanel(title, url, "");
+			}
+			catch (e) {
+				alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请进入新网站后使用Ctrl+D进行添加");
+			}
+		}
+	}
+</script>
+
 <div id="index-main" class="w980_cf">
 	<div class="index-left">
 		<div class="about">
@@ -74,7 +106,7 @@
 				<span>/ About us</span>
 			</h3>
 			<div class="about-box cf">
-				<img src="img/logo_address.jpg" />
+				<img src="img/logo_address.jpg" alt="">
 				<div class="about-con">
 					<a href="javascript:;" class="about-tit">东莞市厚街联宏机械厂</a>
 					<p>
@@ -87,62 +119,102 @@
 		<div id="banner_cxslide2" class="cxslide_x">
 			<div class="box">
 				<ul class="list">
-					<li>
-						<a href="javascript:;">
-							<img src="img/main_banner_1.jpg" />
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<img src="img/main_banner_2.jpg" />
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<img src="img/main_banner_3.jpg" />
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<img src="img/main_banner_4.jpg" />
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<img src="img/main_banner_5.jpg" />
-						</a>
-					</li>
+					<li><a href="javascript:;"><img src="img/main_banner_1.jpg"></a></li>
+					<li><a href="javascript:;"><img src="img/main_banner_2.jpg"></a></li>
+					<li><a href="javascript:;"><img src="img/main_banner_3.jpg"></a></li>
+					<li><a href="javascript:;"><img src="img/main_banner_4.jpg"></a></li>
+					<li><a href="javascript:;"><img src="img/main_banner_5.jpg"></a></li>
 				</ul>
 			</div>
+			<!-- 内部自动创建的切换按钮元素 开始 -->
 			<ul class="btn">
-				<li class="b_1 seclected">
-				</li>
-				<li class="b_2">
-				</li>
-				<li class="b_3">
-				</li>
-				 <li class="b_4">
-				</li>
-				 <li class="b_5">
-				</li>
+				<li class="b_1"></li>
+				<li class="b_2"></li>
+				<li class="b_3"></li>
+				<li class="b_4 selected"></li>
+				<li class="b_5"></li>
 			</ul>
+			<!-- 内部自动创建的切换按钮元素 结束 -->
 		</div>
 		<div class="product">
-			<h3>供应产品<span>/  products</span></h3>
+			<h3>
+				供应产品
+				<span>/  products</span>
+			</h3>
 			<div class="product-box">
 				<ul class="cf">
-					<li><a href="javascript:;"><img src="img/main_1.jpg" /><p>LH-183#  冲孔加工图片 </p></a></li>
-					<li><a href="javascript:;"><img src="img/main_2.jpg" /><p>LH-184#   冲孔加工图片 </p></a></li>
-					<li><a href="javascript:;"><img src="img/main_3.jpg" /><p>LH-185#  冲孔加工图片</p></a></li>
-					<li><a href="javascript:;"><img src="img/main_4.jpg" /><p>LH-323#冲孔加工图片</p></a></li>
-					<li><a href="javascript:;"><img src="img/main_5.jpg" /><p>LH-324#冲孔加工图片</p></a></li>
-					<li><a href="javascript:;"><img src="img/main_6.jpg" /><p>非金属打孔机</p></a></li>
-					<li><a href="javascript:;"><img src="img/main_7.jpg" /><p>冲孔鞋子 001</p></a></li>
-					<li><a href="javascript:;"><img src="img/main_8.jpg" /><p>冲孔鞋子 002</p></a></li>
-					<li><a href="javascript:;"><img src="img/main_9.jpg" /><p>冲孔鞋子 003</p></a></li>
-					<li><a href="javascript:;"><img src="img/main_10.jpg" /><p>冲孔鞋子 004</p></a></li>
-					<li><a href="javascript:;"><img src="img/main_11.jpg" /><p>15年最新款的趋势</p></a></li>
-					<li><a href="javascript:;"><img src="img/main_12.jpg" /><p>无纸海绵冲孔机</p></a></li>
+					<li>
+						<a href="javascript:;" alt="LH-183#  冲孔加工图片">
+							<img alt="LH-183#  冲孔加工图片 " src="img/main_1.jpg" />
+							<p title="LH-183#  冲孔加工图片 ">LH-183#  冲孔加工图片 </p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" alt="LH-184#   冲孔加工图片 ">
+							<img alt="LH-184#   冲孔加工图片 " src="img/main_2.jpg" />
+							<p title="LH-184#   冲孔加工图片 ">LH-184#   冲孔加工图片 </p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" alt="LH-185#  冲孔加工图片 ">
+							<img alt="LH-185#  冲孔加工图片 " src="img/main_3.jpg" />
+						<p title="LH-185#  冲孔加工图片 ">LH-185#  冲孔加工图片 </p>
+					</a>
+					</li>
+					<li>
+						<a href="javascript:;" alt="LH-323#冲孔加工图片">
+							<img alt="LH-323#冲孔加工图片" src="img/main_4.jpg" />
+							<p title="LH-323#冲孔加工图片">LH-323#冲孔加工图片</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" alt="LH-324#冲孔加工图片">
+							<img alt="LH-324#冲孔加工图片" src="img/main_5.jpg" />
+							<p title="LH-324#冲孔加工图片">LH-324#冲孔加工图片</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" alt="非金属打孔机">
+							<img alt="非金属打孔机" src="img/main_6.jpg" />
+							<p title="非金属打孔机">非金属打孔机</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" alt="冲孔鞋子 001">
+							<img alt="冲孔鞋子 001" src="img/main_7.jpg" />
+							<p title="冲孔鞋子 001">冲孔鞋子 001</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" alt="冲孔鞋子 002">
+							<img alt="冲孔鞋子 002" src="img/main_8.jpg" />
+							<p title="冲孔鞋子 002">冲孔鞋子 002</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" alt="冲孔鞋子 003">
+							<img alt="冲孔鞋子 003" src="img/main_9.jpg" />
+							<p title="冲孔鞋子 003">冲孔鞋子 003</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" alt="冲孔鞋子 004">
+							<img alt="冲孔鞋子 004" src="img/main_10.jpg" />
+							<p title="冲孔鞋子 004">冲孔鞋子 004</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" alt="15年最新款的趋势">
+							<img alt="15年最新款的趋势" src="img/main_11.jpg" />
+							<p title="15年最新款的趋势">15年最新款的趋势</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" alt="无纸海绵冲孔机">
+							<img alt="无纸海绵冲孔机" src="img/main_12.jpg" />
+							<p title="无纸海绵冲孔机">无纸海绵冲孔机</p>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -150,13 +222,17 @@
 	<div class="index-right">
 		<div class="honor">
 			<h3>资质证书 <span>/ certificate</span></h3>
+
 			<div class="honor-box">
 				<div id="cxscroll_id" class="cxscroll">
 					<div class="box">
 						<ul class="list">
-							<li><a href="javascript:;"><img src="img/zhengshu.jpg" /></a></li>
+							<li>
+								<a href="javascript:;"><img src="img/zhengshu.jpg" /></a>
+							</li>
 						</ul>
 					</div>
+					<!-- 控制按钮会自动创建，可省略 -->
 					<a class="prev"></a>
 					<a class="next"></a>
 				</div>
@@ -168,19 +244,19 @@
 				<h4>东莞市厚街联宏机械厂总厂</h4>
 				<ul>
 					<li>
-						<span>地址：</span>
+						<span>地&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
 						<p>中国广东省东莞市厚街镇西环路2号（西铂科技园内）</p></li>
 					<li>
-						<span>电  话：</span>
+						<span>电&nbsp;&nbsp;&nbsp;&nbsp;话：</span>
 						<p>086-0769-88383805</p></li>
 					<li>
 						<span>联系人：</span>
 						<p>范小姐</p></li>
 					<li>
-						<span>手  机：</span>
+						<span>手&nbsp;&nbsp;&nbsp;&nbsp;机：</span>
 						<p>13580833912</p></li>
 					<li>
-						<span>传  真：</span>
+						<span>传&nbsp;&nbsp;&nbsp;&nbsp;真：</span>
 						<p>086-0769-88325621</p></li>
 				</ul>
 			</div>
@@ -188,20 +264,20 @@
 				<h4>深圳联宏冲孔厂分厂</h4>
 				<ul>
 					<li>
-						<span>地址：</span>
+						<span>地&nbsp;&nbsp;&nbsp;&nbsp;址：</span>
 						<p>深圳市平湖镇荷花社区水门路162号</p>
 					</li>
 					<li>
-						<span>电  话：</span>
+						<span>电&nbsp;&nbsp;&nbsp;&nbsp;话：</span>
 						<p>0755-84676659/36890516</p>
 					</li>
 					<li>
 						<span>联系人：</span>
 						<p>涂小姐18938039669 <br>
 						   王先生18938656008</p></li>
-					<li><span>邮 箱：</span>
+					<li><span>邮&nbsp;&nbsp;&nbsp;&nbsp;箱：</span>
 						<p>18938039669@189.cn</p></li>
-					<li><span>传  真：</span>
+					<li><span>传&nbsp;&nbsp;&nbsp;&nbsp;真：</span>
 						<p>0755-84676659</p></li>
 				</ul>
 			</div>
@@ -232,28 +308,41 @@
 		</div>
 	</div>
 </div>
+<script src="js/jquery_002.js"></script>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$("#banner_cxslide").cxSlide();
+		$("#banner_cxslide2").cxSlide();
+		$("#cxscroll_id").cxScroll();
+	})
+</script>
 <div id="link">
 	<h3>友情链接<span>/ link</span></h3>
 	<ul class="cf">
-		<li><a href="javascript:;">网络114</a></li>
-		<li><a href="javascript:;">阿里旺旺</a></li>
+		<li>
+			<a href="javascript:;">网络114</a>
+		</li>
+		<li>
+			<a href="javascript:;">阿里旺旺</a>
+		</li>
 	</ul>
 </div>
 <div id="footer">
 	<div class="w980">
 		<div class="code" style="left: 100px">
-			<img src="img/bottom-left.png" />
+			<img src="img/bottom-left.png" alt="" />
 			<p>关注联宏官方微信</p>
 		</div>
 		<div class="code" style="right: 100px;">
-			<img src="img/bottom-right.jpg" />
+			<img src="img/bottom-right.jpg" alt="" />
 			<p>关注联宏公众平台</p>
 		</div>
 		<p class="footer-con">
-			Copyright ©2012 东莞市厚街联宏机械厂   <a href="javascript:;" rel="nofollow">备案号：粤ICP备10026355号-1 </a><br>
+			Copyright ©2012 东莞市厚街联宏机械厂   <a href="http://gdcainfo.miitbeian.gov.cn/" rel="nofollow">备案号：粤ICP备10026355号-1 </a><br>
 			电话:086-0769-88383805     传真:086-0769-88325621 <br>
-			技术支持: <a href="javascript:;">美中鞋业网</a>
-					(<a href="javascript:;">管理登陆</a>)
+			技术支持: <a href="http://www.acshoes.com/" target="_blank">美中鞋业网</a> 
+					(<a href="http://www.sitemanager.acshoes.com/SiteManager/Index.aspx" target="_blank">管理登陆</a>)
 		</p>
 	</div>
 </div>

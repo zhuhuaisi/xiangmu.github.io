@@ -139,9 +139,11 @@ a:hover {
 }
 #banner_cxslide .list {
 	overflow: hidden;
-	width: 9999px;
+	width: 2940px;
+	position: relative;
 }
 #banner_cxslide .list li {
+	width:980px;
 	float: left;
 	position: relative;
 	overflow: hidden;
@@ -160,9 +162,14 @@ a:hover {
 #banner_cxslide .btn {
 	overflow: hidden;
 	position: absolute;
-	bottom: 14px;
-	left: 50%;
-	margin-left: -27px;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	width: 120px;
+	height: 10px;
+	padding: 10px 430px;
+	filter:alpha(opacity:40);
+	opacity:0.4;
 }
 #banner_cxslide .btn li {
 	float: left;
@@ -242,11 +249,13 @@ a:hover {
 }
 #banner_cxslide2 .list {
 	overflow: hidden;
-	width: 9999px;
+	width: 3685px;
+	position: relative;
 }
 
 #banner_cxslide2 .list li {
 	float: left;
+	width: 737px;
 	position: relative;
 	overflow: hidden;
 }
